@@ -1,7 +1,7 @@
 ---
 title: "A practical introduction to ggplot2"
 author: "gscontras"
-date: "6/1/2017"
+date: "6/8/2017"
 output: html_document
 ---
 
@@ -67,6 +67,8 @@ Graphics are data visualizations: mappings from data to aesthetic attributes of 
 - coordinate system
 - positional adjustments
 - facets for geting the same plot for different subsets of the data
+
+For a handy guide to specifying details of your graphics, consult the [`ggplot2` reference](http://ggplot2.tidyverse.org/reference/).
 
 ### A sample dataset
 
@@ -379,7 +381,7 @@ ggplot(lexdec,aes(y=RT,x=NativeLanguage))+
   geom_violin()
 ```
 
-To add in information about mean values and quartiles, we can include a `geom_boxplot` layer.
+To add in information about quartiles and outliers, we can include a `geom_boxplot` layer.
 
 ```{r violin-box}
 ggplot(lexdec,aes(y=RT,x=NativeLanguage))+
